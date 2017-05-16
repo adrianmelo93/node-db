@@ -1,16 +1,16 @@
 var productTemplate =
-'<h3>Name<%  = name %></h3>'+
-'<h3>Price<%  = price %></h3>'+
-'<h3>Symbol<%  = symbol %></h3>';
+'<h3>Name: <%= name %></h3>'+
+'<h3>Price: <%= price %></h3>'+
+'<h3>Symbol: <%= symbol %></h3>';
 
 var stocks=[];
 
 
 var makeTemplate=function(data){
    var li=document.createElement('li');
-   var prodList=document.querySelector('.food-list');
+   var prodList=document.querySelector('.list');
    var compiled=_.template(productTemplate);
-   var prodHtml=compiled(Data);
+   var prodHtml=compiled(data);
    li.innerHTML=prodHtml;
    prodList.insertBefore(li,prodList.firstChild);
 }
@@ -20,7 +20,7 @@ var updateProducts=function(){
 }
 
 var getValues= function(){
-   var name=document.querySelector('input[name=namefood]').value;
+   var name=document.querySelector('input[name=namedata]').value;
    var price=document.querySelector('input[type=number]').value;
    var symbol=document.querySelector('input[name=symbol]').value;
 
@@ -38,7 +38,7 @@ var makeList=function(){
 };
 
 var getAllProducts= function(){
-   fetch('/data')
+   fetch('/stocks')
    .then(function(resp){
        return resp.json();
 
@@ -57,7 +57,7 @@ var getAllProducts= function(){
        e.preventDefault();
        var values=getValues();
        console.log(values);
-       fetch('/',{
+       fetch('/stocks',{
            method:'post',
            headers:{
                'Accept':'application/json',

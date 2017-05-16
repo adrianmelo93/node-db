@@ -7,5 +7,5 @@ const DataSchema = new mongoose.Schema({
   date: { type: Date, required: true, default: Date.now }
 });
 
-const Data = mongoose.model('data', DataSchema);
-module.exports= Data;
+const Datadb = mongoose.model('data', DataSchema);
+module.exports= Datadb;
