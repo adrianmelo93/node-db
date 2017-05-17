@@ -1,13 +1,18 @@
 body, html{
   margin: 0;
   height: 100%;
-  width: 100%;
 }
 
 body{
   background-image: url("http://www.androidguys.com/wp-content/uploads/2016/06/wallpaper-1d24ce.jpg");
  font-family: sans-serif;
 
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
 }
 
 form {
@@ -21,9 +26,8 @@ li, a{
     padding: 20px;
     color: white;
 }
-.myh1{
-    text-align: center;
-}
+
+
 section {
 
     min-height: 100vh;
@@ -63,7 +67,7 @@ button:hover{
 table { width: 640px;
     margin-left:250px;
        text-align: center;
-    } / Make table wider /
+    }
 td, th { border: 1px solid #CCC; }
 
 

@@ -10,50 +10,48 @@
   </head>
   <body>
 
+    <h1 class="title">Welcome</h1>
+
 <section  id="return" class="return">
-  <ul class="nav nav-tabs">
 <h2><a href="#add">Add</a></h2>
-</ul>
 
 <h1><a href="#table">Show table</a></h1>
-
-<div class="a">
-
-</div>
 </section>
 
+<main class="main">
+  <section id="add" class="add">
+    <h3><a href="#return">return home</a></h3>
 
- <section id="add" class="add">
-   <h3><a href="#return">return home</a></h3>
-
-     <form class="form">
-       <div class="input_data">
-           <label>Name</label>
-           <input id="namedata"type="text" name="namedata">
-       </div>
-       <div class="input_data">
-           <label>Price</label>
-           <input id="price"type="number" name="price">
-       </div>
-       <div class="input_data">
-           <label>Symbol</label>
-           <input id="symbol"type="text" name="symbol">
-       </div>
-
-       <button>Submit</button>
-
-       <div class="content">
-       <ul class="list"></ul>
+      <form class="form">
+        <div class="input_data">
+            <label>Name</label>
+            <input id="namedata"type="text" name="namedata">
+        </div>
+        <div class="input_data">
+            <label>Price</label>
+            <input id="price"type="number" name="price">
+        </div>
+        <div class="input_data">
+            <label>Symbol</label>
+            <input id="symbol"type="text" name="symbol">
         </div>
 
-   </form>
- </section>
+        <button>Submit</button>
 
- <section id="table" class="table">
-   <h3><a href="#return">return home</a></h3>
-   <table class="data-table" id="data-table">
-   </table>
- </section>
+        <div class="content">
+        <ul class="list"></ul>
+         </div>
+
+    </form>
+  </section>
+
+  <section id="table" class="table">
+    <h3><a href="#return">return home</a></h3>
+    <table class="data-table" id="data-table">
+    </table>
+  </section>
+</main>
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js"></script>
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
