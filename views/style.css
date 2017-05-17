@@ -1,9 +1,13 @@
 body, html{
+  margin: 0;
   height: 100%;
+  width: 100%;
 }
 
 body{
   background-image: url("http://www.androidguys.com/wp-content/uploads/2016/06/wallpaper-1d24ce.jpg");
+ font-family: sans-serif;
+
 }
 
 form {
@@ -11,47 +15,57 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  justify-content: space-around;
-
 }
 
-label{
-  color: white;
+li, a{
+    padding: 20px;
+    color: white;
+}
+.myh1{
+    text-align: center;
+}
+section {
+
+    min-height: 100vh;
+    width: 100vw;
+    max-width: none;
+    color:white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.return {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
 }
 
 h3 {
   color: white;
 }
 
-main{
-  width: 80vw;
-  margin: 0 auto;
-}
 
 form input {
-  margin: 1rem;
+  color: black;
+  border-radius: 2rem;
 }
 
-.textbox{
-  max-width: 200px;
-  margin-bottom: 40px;
-  position: relative;
-  width: 100%;
+button{
+  color: black;
+  border-radius: 2rem;
 }
 
-.textbox input{
-  font-size: 18px;
-  padding: 10px 10px 10px 5px;
-  display: block;
-  width: 100%;
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid blue;
+button:hover{
+  background-color: blue;
 }
 
-.textbox input:focus{
-  outline: none;
-}
+table { width: 640px;
+    margin-left:250px;
+       text-align: center;
+    } / Make table wider /
+td, th { border: 1px solid #CCC; }
+
 
 .textbox input:focus ~ .highlight {
   animation: inputHighlight 0.3s ease;
